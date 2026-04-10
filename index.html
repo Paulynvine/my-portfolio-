@@ -48,8 +48,9 @@
     /* HERO */
     .hero {
       text-align: center;
-      padding: 80px 20px;
-      background: white;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: white;
     }
 
     .hero h1 {
@@ -59,29 +60,38 @@
 
     .hero h2 {
       font-size: 20px;
-      color: #555;
       margin-bottom: 15px;
     }
 
     .hero p {
       max-width: 600px;
       margin: auto;
-      color: #666;
     }
 
     /* BUTTON */
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 12px 22px;
+      padding: 14px 24px;
       background: #25D366;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: #1da851;
+      transform: scale(1.05);
+    }
+
+    /* TAGLINE */
+    .tagline {
+      text-align: center;
+      padding: 10px;
+      color: #555;
+      font-size: 14px;
     }
 
     /* SECTIONS */
@@ -89,28 +99,59 @@
       background: white;
       margin: 20px;
       padding: 25px;
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
     h2 {
       margin-bottom: 15px;
     }
 
+    /* LIST */
     ul {
       list-style: none;
     }
 
     ul li {
-      padding: 8px 0;
+      padding: 10px 0;
       border-bottom: 1px solid #eee;
     }
 
     /* PROJECT CARDS */
     .card {
-      background: #f0f0f0;
-      padding: 15px;
-      margin-top: 10px;
-      border-radius: 8px;
+      background: white;
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
@@ -129,6 +170,9 @@
     </ul>
   </div>
 
+  <!-- TAGLINE -->
+  <p class="tagline">Available for freelance work • Fiverr & Upwork</p>
+
   <!-- HERO -->
   <section class="hero">
     <h1>Hi, I’m Paulynvine</h1>
@@ -136,7 +180,7 @@
 
     <p>
       I build clean, modern, and responsive websites using HTML, CSS, and JavaScript.
-      I help businesses and individuals build strong online presence.
+      Helping businesses grow online with simple and effective designs.
     </p>
 
     <a class="btn" href="https://wa.me/2348064372971" target="_blank">
@@ -148,8 +192,8 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a frontend web developer focused on building clean and responsive websites.
-      I enjoy turning ideas into real websites that work on all devices.
+      I am a frontend web developer passionate about creating clean and responsive websites.
+      I focus on user-friendly design and helping clients bring their ideas to life.
     </p>
   </section>
 
@@ -157,11 +201,11 @@
   <section id="services">
     <h2>Services</h2>
     <ul>
-      <li>Business Website Design</li>
-      <li>Landing Pages</li>
-      <li>Portfolio Websites</li>
-      <li>Website Fixes & Updates</li>
-      <li>Responsive Web Design</li>
+      <li>✔ Business Website Design</li>
+      <li>✔ Landing Pages</li>
+      <li>✔ Portfolio Websites</li>
+      <li>✔ Website Fixes & Updates</li>
+      <li>✔ Mobile Responsive Design</li>
     </ul>
   </section>
 
@@ -171,12 +215,12 @@
 
     <div class="card">
       <h3>Portfolio Website</h3>
-      <p>A personal portfolio website built using HTML and CSS.</p>
+      <p>A modern responsive personal portfolio built with HTML and CSS.</p>
     </div>
 
     <div class="card">
-      <h3>Landing Page Design</h3>
-      <p>A clean and responsive landing page for business promotion.</p>
+      <h3>Landing Page</h3>
+      <p>A clean and simple landing page design for business promotion.</p>
     </div>
   </section>
 
@@ -192,5 +236,11 @@
     </a>
   </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Paulynvine. All rights reserved.</p>
+  </footer>
+
 </body>
+
 </html>
