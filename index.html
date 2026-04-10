@@ -1,34 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <title>Paulynvine Portfolio</title>
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background: #111;
       color: white;
+      padding: 15px 20px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .navbar ul li a:hover {
+      color: #25D366;
+    }
+
+    /* HERO */
+    .hero {
       text-align: center;
-      padding-top: 100px;
+      padding: 80px 20px;
+      background: white;
     }
-    h1 {
-      color: #00ffcc;
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
-    .box {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
+
+    .hero h2 {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
       margin: auto;
+      color: #666;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    .btn:hover {
+      background: #1da851;
+    }
+
+    /* SECTIONS */
+    section {
+      background: white;
+      margin: 20px;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* PROJECT CARDS */
+    .card {
+      background: #f0f0f0;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 8px;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-    <h1>Hi, I’m Paulynvine 👋</h1>
-    <p>I am a web developer.</p>
-    <p>I build simple and beautiful websites.</p>
-    <p>Contact me: paulagarbz@gmail.com</p>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>Paulynvine</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I’m Paulynvine</h1>
+    <h2>Frontend Web Developer</h2>
+
+    <p>
+      I build clean, modern, and responsive websites using HTML, CSS, and JavaScript.
+      I help businesses and individuals build strong online presence.
+    </p>
+
+    <a class="btn" href="https://wa.me/2348064372971" target="_blank">
+      Hire Me on WhatsApp
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a frontend web developer focused on building clean and responsive websites.
+      I enjoy turning ideas into real websites that work on all devices.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Business Website Design</li>
+      <li>Landing Pages</li>
+      <li>Portfolio Websites</li>
+      <li>Website Fixes & Updates</li>
+      <li>Responsive Web Design</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website built using HTML and CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page Design</h3>
+      <p>A clean and responsive landing page for business promotion.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: paulagarbz@gmail.com</p>
+    <p>WhatsApp: +2348064372971</p>
+
+    <a class="btn" href="https://wa.me/2348064372971" target="_blank">
+      Message Me on WhatsApp
+    </a>
+  </section>
+
 </body>
 </html>
