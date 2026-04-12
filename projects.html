@@ -2,20 +2,34 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects</title>
 
 <style>
 body {
+  margin: 0;
   font-family: Arial;
   background: #111827;
   color: white;
-  padding: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0f172a;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
 }
 
 .card {
   background: #1e293b;
-  padding: 15px;
-  margin: 15px 0;
+  margin: 20px;
+  padding: 20px;
   border-left: 4px solid #38bdf8;
 }
 
@@ -23,33 +37,33 @@ img {
   width: 100%;
   border-radius: 10px;
 }
-
-a {
-  color: #38bdf8;
-  text-decoration: none;
-}
 </style>
 
 </head>
 
 <body>
 
-<h1>My Projects</h1>
+<div class="nav">
+  <h3 style="color:#38bdf8;">Paulynvine</h3>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<h1 style="padding:20px;">My Projects</h1>
 
 <div class="card">
   <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-  <h3>Business Website Design</h3>
-  <p>Modern responsive website for businesses to attract customers.</p>
+  <h3>Business Website</h3>
 </div>
 
 <div class="card">
   <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
-  <h3>Landing Page Design</h3>
-  <p>High converting landing page built to increase sales and engagement.</p>
+  <h3>Landing Page</h3>
 </div>
-
-<br>
-<a href="index.html">← Back Home</a>
 
 </body>
 </html>
