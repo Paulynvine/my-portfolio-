@@ -2,20 +2,37 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact</title>
 
 <style>
 body {
+  margin: 0;
   font-family: Arial;
   background: #0f172a;
   color: white;
-  padding: 40px;
 }
 
-a {
-  color: #38bdf8;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111827;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
   text-decoration: none;
-  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #25D366;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
 }
 </style>
 
@@ -23,16 +40,23 @@ a {
 
 <body>
 
-<h1>Contact Me</h1>
+<div class="nav">
+  <h3 style="color:#38bdf8;">Paulynvine</h3>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+  </div>
+</div>
 
-<p>Email: paulagarbz@gmail.com</p>
+<h1 style="padding:20px;">Contact Me</h1>
 
-<p>WhatsApp: 08064372971</p>
+<p style="padding:20px;">Email: paulagarbz@gmail.com</p>
 
-<a href="https://wa.me/2348064372971">Message Me on WhatsApp</a>
-
-<br><br>
-<a href="index.html">← Back Home</a>
+<div style="padding:20px;">
+  <a class="btn" href="https://wa.me/2348064372971">Chat on WhatsApp</a>
+</div>
 
 </body>
 </html>
