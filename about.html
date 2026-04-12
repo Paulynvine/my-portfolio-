@@ -2,19 +2,36 @@
 <html>
 
 <head>
-<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
 
 <style>
 body {
+  margin: 0;
   font-family: Arial;
   background: #111827;
   color: white;
-  padding: 40px;
 }
 
-a {
-  color: #38bdf8;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0f172a;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
   text-decoration: none;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+.content {
+  padding: 40px;
 }
 </style>
 
@@ -22,19 +39,29 @@ a {
 
 <body>
 
+<div class="nav">
+  <h3 style="color:#38bdf8;">Paulynvine</h3>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="content">
+
 <h1>About Me</h1>
 
 <p>
-I am Paulynvine, a frontend web developer focused on building clean, modern, and responsive websites for businesses and entrepreneurs.
+I am a professional frontend web developer who builds clean, modern, and responsive websites that help businesses attract customers and increase sales.
 </p>
 
 <p>
-My goal is to help businesses attract customers online through high-quality web design.
+My focus is on delivering fast, mobile-friendly, and conversion-focused websites.
 </p>
 
-<br>
-
-<a href="index.html">← Back Home</a>
+</div>
 
 </body>
 </html>
