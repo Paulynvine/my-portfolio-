@@ -2,148 +2,272 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Paulynvine Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<title>Paulynvine | Professional Web Developer</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f6f8;
-      color: #222;
-    }
+<meta name="description" content="Paulynvine is a professional frontend web developer building modern websites for businesses and brands.">
+<meta name="keywords" content="web developer, frontend developer, freelancer, website designer, HTML CSS JavaScript">
+<meta name="author" content="Paulynvine">
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111;
-      color: white;
-      padding: 15px 20px;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-    }
+body {
+  background: #0f172a;
+  color: white;
+}
 
-    .navbar ul li a {
-      color: white;
-      text-decoration: none;
-    }
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(to right, #1f4037, #99f2c8);
-      color: white;
-    }
+.navbar h2 {
+  color: #38bdf8;
+}
 
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      object-fit: cover;
-      border: 4px solid white;
-    }
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 24px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-    }
+.navbar a:hover {
+  color: #38bdf8;
+}
 
-    section {
-      background: white;
-      margin: 20px;
-      padding: 25px;
-      border-radius: 12px;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin-top: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-  </style>
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  margin-bottom: 15px;
+}
+
+/* TYPING TEXT */
+.typing {
+  color: #38bdf8;
+  font-weight: bold;
+  font-size: 20px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #38bdf8;
+}
+
+/* GALLERY */
+img.project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT FORM */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #38bdf8;
+  color: black;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+</style>
 </head>
 
 <body>
 
-  <div class="navbar">
-    <h2>Paulynvine</h2>
-
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- NAV -->
+<div class="navbar">
+  <h2>Paulynvine</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </div>
+</div>
 
-  <section class="hero">
+<!-- HERO -->
+<div class="hero">
+  <img src="IMG_0570.png" class="profile-img" alt="Paulynvine">
 
-    <!-- PROFILE IMAGE FIXED -->
-    <img src="IMG_0570.png" alt="Paulynvine" class="profile-img">
+  <h1>Hi, I'm Paulynvine</h1>
 
-    <h1>Hi, I’m Paulynvine</h1>
-    <h2>Frontend Web Developer</h2>
+  <div class="typing" id="typing"></div>
 
-    <p>
-      I build clean, modern, and responsive websites using HTML, CSS, and JavaScript.
-    </p>
+  <p>I build modern websites that help businesses attract customers and increase sales.</p>
 
-    <a class="btn" href="https://wa.me/2348064372971">
-      Hire Me on WhatsApp
-    </a>
-  </section>
+  <a class="btn" href="https://wa.me/2348064372971">Hire Me</a>
+</div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a frontend developer focused on building responsive and clean websites.</p>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="card">
+I am a frontend developer specialized in building clean, responsive, and high-converting websites for brands and businesses.
+</div>
+</section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Business Websites</li>
-      <li>Landing Pages</li>
-      <li>Portfolio Websites</li>
-    </ul>
-  </section>
+<!-- SERVICES -->
+<section id="services">
+<h2 class="title">Services</h2>
+<div class="grid">
+<div class="card">Business Website Design</div>
+<div class="card">Landing Pages That Convert</div>
+<div class="card">Portfolio Websites</div>
+<div class="card">WhatsApp Integration</div>
+</div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="title">Projects</h2>
 
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Modern portfolio built with HTML & CSS.</p>
-    </div>
+<div class="grid">
+<div class="card">
+<img class="project-img" src="IMG_0570.png">
+<p>Portfolio Website</p>
+</div>
 
-  </section>
+<div class="card">
+<img class="project-img" src="IMG_0570.png">
+<p>Business Landing Page</p>
+</div>
+</div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: paulagarbz@gmail.com</p>
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title">Contact Me</h2>
 
-    <a class="btn" href="https://wa.me/2348064372971">
-      Message Me
-    </a>
-  </section>
+<form action="mailto:paulagarbz@gmail.com" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/2348064372971">WhatsApp</a>
+
+<script>
+// TYPING ANIMATION
+const text = ["Frontend Developer", "Freelancer", "Website Designer"];
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+function type() {
+  current = text[i];
+  let display = document.getElementById("typing");
+
+  if (isDeleting) {
+    display.innerHTML = current.substring(0, j--);
+  } else {
+    display.innerHTML = current.substring(0, j++);
+  }
+
+  if (!isDeleting && j === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1000);
+    return;
+  }
+
+  if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % text.length;
+  }
+
+  setTimeout(type, isDeleting ? 60 : 120);
+}
+
+type();
+</script>
 
 </body>
-
 </html>
