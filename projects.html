@@ -25,6 +25,7 @@ body {
   color: white;
   margin-left: 15px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav a:hover {
@@ -36,19 +37,32 @@ h1 {
   padding: 20px;
 }
 
-/* PROJECT CARD */
+/* CARD */
 .card {
   background: #1e293b;
   margin: 20px;
   padding: 20px;
   border-left: 4px solid #38bdf8;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* CARD HOVER ANIMATION */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* IMAGE */
 img {
   width: 100%;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* IMAGE HOVER */
+.card:hover img {
+  transform: scale(1.05);
 }
 
 /* BUTTON */
@@ -61,6 +75,13 @@ img {
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
 }
 </style>
 
@@ -79,7 +100,7 @@ img {
   </div>
 </div>
 
-<!-- PAGE TITLE -->
+<!-- TITLE -->
 <h1>My Projects</h1>
 
 <!-- PROJECT 1 -->
