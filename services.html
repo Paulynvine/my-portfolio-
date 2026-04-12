@@ -2,26 +2,39 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services</title>
 
 <style>
 body {
+  margin: 0;
   font-family: Arial;
   background: #0f172a;
   color: white;
-  padding: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111827;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #38bdf8;
 }
 
 .card {
   background: #1e293b;
+  margin: 20px;
   padding: 20px;
-  margin: 10px 0;
   border-left: 4px solid #38bdf8;
-}
-
-a {
-  color: #38bdf8;
-  text-decoration: none;
 }
 </style>
 
@@ -29,15 +42,22 @@ a {
 
 <body>
 
-<h1>My Services</h1>
+<div class="nav">
+  <h3 style="color:#38bdf8;">Paulynvine</h3>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<h1 style="padding:20px;">My Services</h1>
 
 <div class="card">✔ Business Website Design</div>
 <div class="card">✔ Landing Pages That Convert</div>
 <div class="card">✔ Portfolio Websites</div>
-<div class="card">✔ WhatsApp Business Integration</div>
-
-<br>
-<a href="index.html">← Back Home</a>
+<div class="card">✔ WhatsApp Integration</div>
 
 </body>
 </html>
